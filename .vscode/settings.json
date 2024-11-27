@@ -1,0 +1,21 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "prettier.enable": false,
+  "eslint.workingDirectories": [
+    {
+      "directory": "site",
+      "changeProcessCWD": true
+    }
+  ],
+  "[mdx]": {
+    "editor.wordWrap": "on"
+  }
+}

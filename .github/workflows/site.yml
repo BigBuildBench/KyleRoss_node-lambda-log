@@ -1,0 +1,21 @@
+name: site
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '!*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Deploy Site
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./gh-pages
+          cname: lambdalog.js.org
